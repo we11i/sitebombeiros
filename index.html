@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Bombeiros Juvenis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(#c2462d, #283561, #062547);
+            font-family: 'Open Sans', sans-serif;
+        }
+        .navbar {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px 0;
+            height: 50px; 
+            overflow: hidden;
+            z-index: 1000; 
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; 
+        }
+        .navbar li {
+            margin: 0 10px; 
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+        .navbar a:hover {
+            color: #0c0f13;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            min-height: calc(100vh - 50px); 
+            padding: 20px; 
+            color: #fff; 
+            background-color: #000; 
+            text-align: center; 
+        }
+        .text {
+            max-width: 90%; 
+            margin: 0 auto;
+        }
+        .text h2 {
+            color: floralwhite;
+            font-size: 2em; 
+            margin-bottom: 20px;
+            margin-top: 40px; /* Adicionado para mover o h2 mais para baixo */
+            line-height: 1.2em;
+            font-weight: 700;
+        }
+        .text h2 span {
+            font-size: 2.5em; 
+            color: red;
+        }
+        .text p {
+            color: #fff;
+            font-size: 1em; 
+            line-height: 1.6em; 
+        }
+        .text a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e70304;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .text a:hover {
+            background-color: #d0021b;
+        }
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 50vh; 
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            overflow: hidden;
+        }
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e70304;
+            clip-path: circle(50% at bottom right);
+        }
+        .foto {
+            position: relative;
+            max-width: 25%; 
+            height: auto; 
+            margin-top: 20px; 
+            left: 470px;
+        }
+        .foto img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar a {
+                font-size: 12px;
+            }
+            .navbar li {
+                margin: 0 5px;
+            }
+            .container {
+                min-height: calc(100vh - 50px); 
+                padding: 15px; 
+            }
+            .text h2 {
+                font-size: 1.8em;
+                margin-top: 30px; /* Ajustado para telas menores */
+            }
+            .text h2 span {
+                font-size: 2em;
+            }
+            .text p {
+                font-size: 0.9em; 
+            }
+            .text a {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+            .foto {
+                max-width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .navbar a {
+                font-size: 10px;
+            }
+            .navbar li {
+                margin: 0 3px;
+            }
+            .container {
+                min-height: calc(100vh - 50px); 
+                padding: 10px; 
+            }
+            .text h2 {
+                font-size: 1.5em;
+                margin-top: 20px; /* Ajustado para telas menores */
+            }
+            .text h2 span {
+                font-size: 1.8em;
+            }
+            .text p {
+                font-size: 0.8em; 
+            }
+            .text a {
+                font-size: 10px;
+                padding: 6px 10px;
+            }
+            .foto {
+                max-width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="principal.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="text">
+            <h2>O QUE VOCÊS SÃO??? <span>BOMBEIROS!!!</span></h2>
+            <p>Seja bem-vindo ao Programa de Bombeiros Juvenis, onde jovens de todas as idades têm a oportunidade de se transformar em líderes e heróis. Nosso curso oferece uma experiência única e enriquecedora, projetada para jovens que desejam explorar o mundo dos serviços de emergência e desenvolvimento pessoal.<br><br>
+
+            <strong>Sobre o Programa</strong><br>
+            O Programa de Bombeiros Juvenis é uma iniciativa dedicada a formar a próxima geração de líderes e profissionais de segurança. Com uma abordagem prática e educativa, nosso curso combina treinamento técnico em combate a incêndios, primeiros socorros e habilidades de liderança com uma forte ênfase em valores como coragem, responsabilidade e trabalho em equipe.<br><br>
+
+            <strong>O que Oferecemos:</strong><br>
+            <ul>
+                <li><strong>Treinamento Especializado:</strong> Aprenda técnicas de combate a incêndios, primeiros socorros e operações de emergência com instrutores experientes e dedicados.</li>
+                <li><strong>Desenvolvimento de Habilidades:</strong> Melhore suas habilidades de comunicação, liderança e resolução de problemas através de atividades práticas e simulações realistas.</li>
+                <li><strong>Experiência Prática:</strong> Participe de exercícios de campo e atividades práticas que simulam cenários de emergência, proporcionando uma experiência imersiva e educativa.</li>
+                <li><strong>Valores e Ética:</strong> Desenvolva uma compreensão profunda da importância do serviço comunitário, ética e responsabilidade pessoal.</li>
+            </ul><br>
+
+            <strong>Por que Participar?</strong><br>
+            O nosso curso não é apenas sobre aprender a lidar com situações de emergência; é também sobre crescer como indivíduo. Ao participar do Programa de Bombeiros Juvenis, você terá a oportunidade de desenvolver habilidades valiosas que serão úteis em qualquer caminho que escolher seguir, além de contribuir positivamente para a sua comunidade.<br><br>
+
+            <strong>Junte-se a Nós!</strong><br>
+            Se você é um jovem apaixonado por ajudar os outros, aprender novas habilidades e fazer a diferença, nosso Programa de Bombeiros Juvenis é o lugar certo para você. Inscreva-se hoje e comece a sua jornada para se tornar um verdadeiro herói!<br><br>
+
+            Para mais informações sobre o programa, datas de inscrição e requisitos, entre em contato conosco ou visite a nossa página de inscrição.</p>
+        </div>
+    </div>
+    <section>
+        <div class="circle"></div>
+        <div class="foto">
+            <img src="WhatsApp Image 2024-08-29 at 21.12.12.jpeg" alt="Descrição da imagem">
+        </div>
+    </section>
+</body>
+</html>
